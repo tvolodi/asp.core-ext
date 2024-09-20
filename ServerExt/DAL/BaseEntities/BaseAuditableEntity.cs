@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace server_ext.DAL.BaseEntities
 {
-    public class BaseAuditableEntity<T, TUserKey> : SoftDelitableEntity<T> where T : struct
+    public class BaseAuditableEntity<T, TUserKey> : BaseSoftDelitableEntity<T> where T : struct
     {
         public DateTime? CreatedAt { get; set; }
         public TUserKey? CreatedBy { get; set; }

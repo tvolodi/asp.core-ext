@@ -5,6 +5,10 @@
     <RootNamespace>server_ext</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+	<Version>1.0.0-alpha</Version>
+	<Author>tvolodi</Author>
+	<PackageDescription>ASP.Net Core Server extentions library</PackageDescription>
+    <RepositoryUrl>https://github.com/tvolodi/asp.core-ext</RepositoryUrl>
   </PropertyGroup>
 
 </Project>

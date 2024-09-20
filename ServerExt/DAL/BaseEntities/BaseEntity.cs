@@ -15,6 +15,7 @@ namespace server_ext.DAL.BaseEntities
     {
         [Key]
         public T Id { get; set; }
+        public string Code { get; set; } = default!;
         public string? Name { get; set; }
     }
 }
