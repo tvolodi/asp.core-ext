@@ -1,14 +1,22 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net8.0</TargetFramework>
     <RootNamespace>server_ext</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
-	<Version>1.0.0-alpha</Version>
-	<Author>tvolodi</Author>
+	<Version>1.0.1</Version>
+	<Authors>tvolodi</Authors>
 	<PackageDescription>ASP.Net Core Server extentions library</PackageDescription>
     <RepositoryUrl>https://github.com/tvolodi/asp.core-ext</RepositoryUrl>
+	<IsPackable>true</IsPackable>
   </PropertyGroup>
+	
+	<ItemGroup>
+	  <PackageReference Include="AutoMapper" Version="13.0.1" />
+	  <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.8" />
+	  <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.4" />
+	  <PackageReference Include="Serilog.AspNetCore" Version="8.0.2" />
+	</ItemGroup>
 
 </Project>
