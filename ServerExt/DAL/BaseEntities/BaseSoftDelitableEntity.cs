@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace server_ext.DAL.BaseEntities
 {
-    public class BaseSoftDelitableEntity<TKey> : BaseEntity
+    public class BaseSoftDelitableEntity<TKey> : BaseEntity<TKey> where TKey : struct
     {
         public bool IsDeleted { get; set; }
     }
