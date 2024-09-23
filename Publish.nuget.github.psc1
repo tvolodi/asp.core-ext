@@ -1,0 +1,2 @@
+dotnet pack --configuration Release ./ServerExt 
+dotnet nuget push "ServerExt/bin/Release/ServerExt.1.0.0-alpha.nupkg" --api-key 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 --source "github"
