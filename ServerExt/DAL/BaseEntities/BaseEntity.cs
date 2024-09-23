@@ -11,10 +11,10 @@ namespace server_ext.DAL.BaseEntities
     /// Base entity class
     /// </summary>
     /// <typeparam name="T"></typeparam>
-    public class BaseEntity<T> where T : struct
+    public class BaseEntity
     {
         [Key]
-        public T Id { get; set; }
+        public int Id { get; set; }
         public string Code { get; set; } = default!;
         public string? Name { get; set; }
     }
